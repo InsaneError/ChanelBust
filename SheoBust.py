@@ -10,11 +10,11 @@ from datetime import datetime, timedelta
 
 @loader.tds
 class SubCheckBot(loader.Module):
-    """Буст канала от @InsModule"""
+    """Буст канала от @SheoMod"""
     
     strings = {
         'name': 'SubChecker',
-        'not_subscribed': "<b>Вы не подписаны на наш канал!</b>\nПожалуйста, подпишитесь на канал {channel_link}, чтобы продолжить общение.\n\n<b>Вы были заблокированы до подписки.</b>",
+        'not_subscribed': "<b>Вы не подписаны на наш канал!</b>\nПожалуйста, подпишитесь на канал {channel_link}, чтобы продолжить общение.\n\n<b>В течении минуты вас разблокирую.</b>",
         'subscribed': "<b>Спасибо за подписку! Вы были разблокированы.</b>",
         'channel_not_set': "<b>Канал для проверки подписки не настроен!</b>\n\nИспользуйте команду .subchannel [юзернейм или ссылка] для настройки канала.\nПример: .subchannel @my_channel",
         'channel_set': "<b>Канал для проверки подписки установлен:</b> {}",
